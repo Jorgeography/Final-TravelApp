@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome To Travel Planner</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="holder headline">
+        Travel Planner
+      </h1>
+      <div id="trip-container">
+        <div class="trip-input">
+          <label for="destination"><h3>Where are you going?</h3></label>
+          <input type="text" id="travel-city" name="destination"
+                  placeholder="Enter Destination Here">
+          <span class="border">
+        </div>
+        <div class="trip-input">
+          <label for="travel-date"><h3>When are you leaving?</h3></label>
+          <span class="border">
+          <input type="date" id="departing-date" name="travel-date" min="2019-12-31" max="2021-12-31">
+        </div>
+        <div class="trip-input">
+          <label for="return-date"><h3>When are you returning?</h3></label>
+          <span class="border">
+          <input type="date" id="returning-date" name="return-date" min="2019-12-31" max="2021-12-31">
+        </div>
+      </div>
+      <div id="buttons-container">
+        <button name="button" id="save-trip-button" onclick="Client.handleSubmit(event)">Save Trip</button>
+      </div>
+      <div id="results-container">             
+      </div> 
+      </div>
+         
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }   
+    </script>
+
+  </body>
+</html>

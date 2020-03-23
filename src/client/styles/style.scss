@@ -1,0 +1,100 @@
+@import url("https://use.typekit.net/led1ccf.css");
+
+body{
+    background: rgb(165, 175, 176);
+    font-family: 'letter-gothic-std', monospace;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.headline {
+  color: black;
+  font-family: 'sirin-stencil', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 3px 3px 5px #f1f1f1;
+}
+
+#results-container{
+    margin: 23px 7px 7px 7px;
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+}
+
+#trip-container{
+    justify-content: space-evenly;
+    display: flex;
+    color: black;;
+}
+
+label {
+    font-size: 25px;
+    display:block;
+}
+
+#app{
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 21px;
+    display: flex;
+}
+
+input{
+    display:block;
+    width: 323px;
+    background: rgba(214,255,152,0.654499299719888);
+    color: black;
+    font-size: 21px;
+    font-family: 'letter-gothic-std', monospace;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#destination-image{
+    margin-right: 15px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#travel-city {
+    height: 30px;
+    justify-content: space-between;
+    width: 330px;
+}
+
+#buttons-container{
+    justify-content: center;
+    display: flex;
+    margin-top: 21px;
+}
+#save-trip-button:hover{
+    background: rgba(214, 255, 152, 0.379);
+}
+
+
+.card{
+    display: flex;
+    background: rgba(214,255,152,0.654499299719888);
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#save-trip-button{
+    padding: 8px 46px 8px 46px;
+    background:rgba(214,255,152,0.654499299719888);
+    color: #ffffff;
+    font-size: 24px;
+    border: none;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: 'letter-gothic-std', monospace;
+    font-weight: 800;
+    font-style: italic;
+    box-shadow: 4px 6px 8px rgb(21, 21, 21);
+    border-radius: 30px;
+}
